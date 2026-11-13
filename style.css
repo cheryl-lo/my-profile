@@ -1,0 +1,279 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+/* OVERALL WEBSITE */
+body {
+  background-color: #F7F5F0;
+  color: #242424;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 60px auto;
+  padding: 0 25px;
+}
+
+/* MAIN HEADING */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+/* PROFILE PICTURE */
+img {
+  display: block;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+/* TAGLINE */
+.tagline {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8C7968;
+}
+
+/* BIO */
+.bio {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 30px auto;
+  max-width: 650px;
+}
+
+/* SECTION HEADINGS */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  font-weight: 500;
+  color: #242424;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #D9D1C7;
+}
+
+/* PARAGRAPHS */
+p {
+  color: #55514D;
+}
+
+/* LINKS */
+a {
+  color: #8C7968;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #242424;
+}
+
+/* SOCIAL LINKS */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* LINKEDIN BUTTON */
+.linkedin-container {
+  text-align: center;
+  margin: 35px 0 60px;
+}
+
+.linkedin-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #8C7968;
+  border-radius: 3px;
+  color: #242424;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #242424;
+  color: #FFFFFF;
+  border-color: #242424;
+}
+
+/* MINIMALIST FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 90px;
+  padding: 45px 20px 20px;
+  border-top: 1px solid #D9D1C7;
+}
+
+.footer-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #8C7968;
+}
+
+.footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #242424;
+  margin: 10px 0 25px;
+  padding: 0;
+  border: none;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.social-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #55514D;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #8C7968;
+}
+
+.copyright {
+  border-top: 1px solid #D9D1C7;
+  padding-top: 20px;
+  font-size: 11px;
+  color: #8C7968;
+  letter-spacing: 1px;
+}
+
+/* EDITORIAL INTEREST SECTIONS */
+.interest-section {
+  margin: 65px 0;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #8C7968;
+  text-transform: uppercase;
+}
+
+.interest-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #242424;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D9D1C7;
+}
+
+.interest-section p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #55514D;
+  margin-top: 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+    max-width: 100%;
+  }
+}
+
+/* Small tablet */
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 540px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .interest-section {
+    margin: 45px 0;
+  }
+
+  .interest-section h2 {
+    font-size: 26px;
+  }
+
+  .interest-section p {
+    font-size: 14px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .social-links {
+    gap: 25px;
+  }
+}
+
